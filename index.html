@@ -476,9 +476,15 @@
 
       .build-grid {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 24px;
         margin-top: 40px;
+      }
+
+      .build-item:nth-child(4),
+      .build-item:nth-child(5),
+      .build-item:nth-child(6) {
+        grid-column: span 1;
       }
 
       .build-item {
@@ -526,8 +532,14 @@
       /* Responsive Design */
       @media (max-width: 1200px) {
         .build-grid {
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        }
+        
+        .build-item:nth-child(4),
+        .build-item:nth-child(5),
+        .build-item:nth-child(6) {
+          grid-column: span 1;
         }
       }
 
@@ -535,6 +547,12 @@
         .build-grid {
           grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        }
+        
+        .build-item:nth-child(4),
+        .build-item:nth-child(5),
+        .build-item:nth-child(6) {
+          grid-column: span 1;
         }
       }
 
@@ -629,6 +647,12 @@
           grid-template-columns: repeat(2, 1fr);
           gap: 20px;
         }
+        
+        .build-item:nth-child(4),
+        .build-item:nth-child(5),
+        .build-item:nth-child(6) {
+          grid-column: span 1;
+        }
 
         .build-item {
           padding: 20px 16px;
@@ -675,6 +699,12 @@
         .build-grid {
           grid-template-columns: 1fr;
           gap: 16px;
+        }
+        
+        .build-item:nth-child(4),
+        .build-item:nth-child(5),
+        .build-item:nth-child(6) {
+          grid-column: span 1;
         }
 
         .build-item {
@@ -725,15 +755,19 @@
       </div>
             <div class="build-item">
               <h3 class="build-title">ACF Integration</h3>
-              <p class="build-description">Advanced Custom Fields support with flexible field groups and custom post types</p>
+              <p class="build-description">Advanced Custom Fields support with flexible field groups</p>
         </div>
             <div class="build-item">
               <h3 class="build-title">Template Structure</h3>
               <p class="build-description">Proper WordPress template hierarchy with flexible content areas and partials</p>
           </div>
             <div class="build-item">
-              <h3 class="build-title">Lightweight & Extendable</h3>
-              <p class="build-description">Minimal core with hooks and filters for easy customization and extension</p>
+              <h3 class="build-title">Lightweight</h3>
+              <p class="build-description">Minimal core with optimized performance and clean code structure</p>
+          </div>
+            <div class="build-item">
+              <h3 class="build-title">Extendable</h3>
+              <p class="build-description">Hooks and filters for easy customization and extension</p>
           </div>
           </div>
           </div>
