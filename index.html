@@ -476,7 +476,7 @@
 
       .build-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 24px;
         margin-top: 40px;
       }
@@ -524,6 +524,13 @@
 
 
       /* Responsive Design */
+      @media (max-width: 1200px) {
+        .build-grid {
+          grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        }
+      }
+
       @media (max-width: 900px) {
         .build-grid {
           grid-template-columns: repeat(2, 1fr);
@@ -692,7 +699,7 @@
       <div id="particles-js"></div>
       <div class="container">
         <div class="hero-badge" data-aos="fade-up" data-aos-delay="100">
-          v1.0.4 released on September 13, 2025 • MIT License
+          v1.0.4 released on September 14, 2025 • MIT License
         </div>
 
         <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">WordPress Theme Framework</h1>
@@ -702,7 +709,7 @@
         </p>
 
         <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
-          <a href="https://github.com/dmitry-conquer/zen-theme/archive/refs/heads/main.zip" class="btn-primary" download="zen-theme.zip"> Download Theme </a>
+          <a href="https://github.com/dmitry-conquer/wp-starter-theme/archive/refs/heads/main.zip" class="btn-primary" download="zen-theme.zip"> Download Theme </a>
         </div>
 
         <!-- Theme Features -->
@@ -710,27 +717,23 @@
           <div class="build-grid">
             <div class="build-item">
               <h3 class="build-title">Modern PHP Architecture</h3>
-              <p class="build-description">Namespace organization and clean code structure following WordPress standards</p>
+              <p class="build-description">Clean namespace organization and PSR-4 autoloading following modern PHP standards</p>
         </div>
             <div class="build-item">
               <h3 class="build-title">Class-Based System</h3>
-              <p class="build-description">Everything built on PHP classes with autoloader for organized development</p>
+              <p class="build-description">Organized class structure with static methods for clean code organization</p>
       </div>
             <div class="build-item">
-              <h3 class="build-title">Custom Components</h3>
-              <p class="build-description">Shortcodes, widgets, and template parts ready for customization</p>
+              <h3 class="build-title">ACF Integration</h3>
+              <p class="build-description">Advanced Custom Fields support with flexible field groups and custom post types</p>
         </div>
             <div class="build-item">
-              <h3 class="build-title">WordPress Integration</h3>
-              <p class="build-description">Menu support, theme customizer hooks, and plugin compatibility</p>
-          </div>
-            <div class="build-item">
               <h3 class="build-title">Template Structure</h3>
-              <p class="build-description">Proper WordPress template hierarchy with flexible content areas</p>
+              <p class="build-description">Proper WordPress template hierarchy with flexible content areas and partials</p>
           </div>
             <div class="build-item">
-              <h3 class="build-title">Developer Ready</h3>
-              <p class="build-description">Clean code, custom hooks, and filters for easy extension</p>
+              <h3 class="build-title">Lightweight & Extendable</h3>
+              <p class="build-description">Minimal core with hooks and filters for easy customization and extension</p>
           </div>
           </div>
           </div>
